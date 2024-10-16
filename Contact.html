@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Home page content -->
+        <main>
+            <nav>
+
+                <div class="left"><img src="qlogo.jpg" alt="">
+                    <div class="title">
+                        <h1>Quran Player</h1>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="index.html"><b>Home</b></a></li>
+                            <li><a href="recitation.html"><b>Recitation</b></a></li>
+                            <li><a href="Recitors.html"><b>Reciters</b></a></li>
+                            <li><a href="Contact.html"><b>Contact</b></a></li>
+
+                        </ul>
+                    </div>
+            </nav>
+
+    </header>
+<div class="heading">
+<h1>GET IN TOUCH</h1>
+</div>
+<form action="submit.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send</button>
+</form>
+<div id="confirmationMessage" class="hidden">Your message has been successfully sent!</div>
+
+<script >
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // Update submitted details
+    document.getElementById("submittedName").textContent = name;
+    document.getElementById("submittedEmail").textContent = email;
+    document.getElementById("submittedMessage").textContent = message;
+
+    // Show confirmation message
+    document.getElementById("confirmationMessage").classList.remove("hidden");
+
+    // Optional: Hide the form after submission
+    document.getElementById("contactForm").reset();
+    document.getElementById("contactForm").classList.add("hidden");
+    });
+</script>
+</body>
+</html>

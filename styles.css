@@ -1,0 +1,309 @@
+.home-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.hero1 .para1{
+    display: flex;
+    
+}
+
+.left img {
+    width: 5%;
+    border-radius: 50px;
+    display: flex;
+    vertical-align: left;
+    margin: 5px 50px;
+    padding: 4px 0;
+}
+
+.home-page header {
+    background-color: white;
+    color: green;
+    text-align: center;
+    padding: -50px 0;
+
+}
+
+.title {
+
+    display: flex;
+    flex-grow: 8;
+    margin-left: -50px;
+}
+
+
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    margin: 30px 9px;
+
+}
+
+
+.hero1 h2 {
+    font-size: 24px;
+    color: #097417;
+    margin-bottom: 20px;
+}
+
+.hero1 p {
+    font-size: 16px;
+    color:black;
+    line-height: 1.5;
+}
+
+
+/* Hero section styles */
+.hero {
+    background-image: url('imgb.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 100px;
+}
+
+hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #098163;
+    color: #fff;
+}
+
+.recitation-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.recitation-page header {
+    background-color:#098163;
+    color: white;
+    text-align: center;
+    margin: 0px 0px;
+
+}
+
+.recitation-page .title {
+    
+    font-size: 1em;
+    margin-bottom: 150px 50px;
+    display: inline-block;
+
+}
+
+.recitation-page .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.recitation-page .item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recitation-page h3 {
+    color: #333;
+}
+
+.recitation-page p {
+    color: #666;
+}
+
+/* Styles for the audio player */
+
+
+.recitation-page .audio-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recitation-page .button {
+    display: flex;
+    justify-content: space-around;
+
+    color: #098163;
+    /* Adjust the color as needed */
+}
+
+.button .icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.surahs>div {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(134, 98, 98, 0.4);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: calc(100% - 65px);
+    transition: .3s color ease;
+    cursor: pointer;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 20px;
+    counter-increment: surah-counter;
+}
+
+.surahs>div::after {
+    content: counter(surah-counter);
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
+    transform: translate(50%, 50%);
+    width: 40px;
+    /* Increased width */
+    height: 40px;
+    /* Increased height */
+    line-height: 40px;
+    /* Adjust line-height to center text vertically */
+    background-color: inherit;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: inherit;
+}
+
+
+
+
+.recitation-page .audio-player audio {
+    width: 100%;
+    /* Adjust the width as needed */
+}
+
+.reciters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.reciter {
+    text-align: center;
+}
+
+.reciter img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.reciter p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.reciter button {
+    background-color: #0d5c27;
+    color: #fff;
+    border: none;
+    padding: 6px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reciter button:hover {
+    background-color: #0056b3;
+}
+
+
+
+#applyChangesBtn {
+    background-color: #33343d;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#applyChangesBtn:hover {
+    background-color: #0056b3;
+}
+/* Basic styling for the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    height: 150px;
+}
+button {
+    background-color:#0a6d06;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.heading h1{
+    font-size: 32px;
+    color: #0a6d06;
+    text-align: center;
+    margin-top: 20px;
+ 
+}
+.success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    color: #3c763d;
+}
